@@ -17,7 +17,7 @@ public class Mousepoint implements ActionListener, Serializable {
     private static JPanel panel;
 
     public static void main(String[] args) {
-        // 设置 JFrame 和 JPanel
+        // set JFrame 和 JPanel
         frame = new JFrame("Mouse Clicker");
         panel = new JPanel();
         frame.setSize(350, 200);
@@ -26,7 +26,7 @@ public class Mousepoint implements ActionListener, Serializable {
         frame.add(panel);
         panel.setLayout(null);
 
-        // 添加 Click Count Label 和 TextField
+        //  Click Count Label 和 TextField
         clickCountLabel = new JLabel("Click Count:");
         clickCountLabel.setBounds(10, 20, 80, 25);
         panel.add(clickCountLabel);
@@ -44,13 +44,13 @@ public class Mousepoint implements ActionListener, Serializable {
         delayField.setBounds(100, 50, 165, 25);
         panel.add(delayField);
 
-        // 添加 Start Clicking 按钮
+        // 添加 Start Clicking 按鈕
         startButton = new JButton("Start Clicking");
         startButton.setBounds(10, 80, 300, 50);
         panel.add(startButton);
         startButton.addActionListener(new Mousepoint());
 
-        // 显示 JFrame
+        // show JFrame
         frame.setVisible(true);
     }
 
