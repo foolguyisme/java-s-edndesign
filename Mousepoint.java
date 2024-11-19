@@ -35,7 +35,7 @@ public class Mousepoint implements ActionListener, Serializable {
         clickCountField.setBounds(100, 20, 165, 25);
         panel.add(clickCountField);
 
-        // 添加 Delay Label 和 TextField
+        // Delay Label 和 TextField
         delayLabel = new JLabel("Delay (ms):");
         delayLabel.setBounds(10, 50, 80, 25);
         panel.add(delayLabel);
